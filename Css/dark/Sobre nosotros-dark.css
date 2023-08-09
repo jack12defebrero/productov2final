@@ -1,0 +1,73 @@
+:root {
+    --color-uno: #000000;
+    --color-dos: #18181a;
+    --color-tres: #42444b;
+    --color-cinco: #464852;
+    --color-seis: #ffff;
+    --color-siete:rgb(254, 134, 13);
+}
+
+/*nabar*/
+.dark .navbar {
+    background-color: var(--color-uno);
+}
+
+.dark .nav-link {
+    color: #ffffff !important;
+}
+.dark .navbar-toggler {
+    background: #ffffff;
+}
+
+.dark .navbar:hover {
+    box-shadow: 10px 2px 36px #ffffff;
+}
+.dark #nav-bar ul li a:hover {
+    color: var(--color-seis) !important;
+  }
+
+
+.dark .hero {
+    background-color: var(--color-dos);
+    color: var(--color-seis);
+}
+
+
+.dark .main {
+    background-color: var(--color-tres);
+}
+.dark .card{
+background-color: var(--color-uno);
+}
+.dark .card__item {
+    border-top: 5px solid var(--color-seis);
+    box-shadow: 0 0 19px black;
+    background-color: var(--color-cinco);
+    box-shadow: 0 0 19px var(--color-seis);
+}
+.dark .card__paragraph, 
+.dark .instructor__tag,
+.dark .form__title {
+    color: var(--color-seis);
+}
+
+.dark .instructor__paragraph {
+    font-weight: 700;
+    color: var(--color-seis);
+}
+.dark .title,
+.dark .instructor__name{
+color: var(--color-siete);
+}
+
+.dark .footer{
+    box-shadow: 0px 30px 80px #ffffff;
+  }
+
+  .dark .about__paragraph, .dark .card__copy {
+    color: #ffffff;
+  }
+
+  .dark .card__title {
+    color: var(--color-siete)
+  }

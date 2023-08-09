@@ -1,0 +1,284 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap');
+
+:root {
+  --color-1: #7194ad;
+  --color-2:#92b9c2;
+  --color-3:#b6cfd1;
+  --color-4:#dae9e7;
+  --color-5: #f7f9f9;
+}
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+
+h1 {
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, Sans-serif;
+  background: linear-gradient(277deg, #7194ad, #9cbfc7, #5b8b96, #92b9c2);
+  background-size: 800% 800%;
+
+  -webkit-animation: AnimationName 5s ease infinite;
+    -moz-animation: AnimationName 5s ease infinite;
+    -o-animation: AnimationName 5s ease infinite;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+  0%{background-position:0% 62%}
+  50%{background-position:100% 39%}
+  100%{background-position:0% 62%}
+}
+@-moz-keyframes AnimationName {
+  0%{background-position:0% 62%}
+  50%{background-position:100% 39%}
+  100%{background-position:0% 62%}
+}
+@-o-keyframes AnimationName {
+  0%{background-position:0% 62%}
+  50%{background-position:100% 39%}
+  100%{background-position:0% 62%}
+}
+@keyframes AnimationName {
+  0%{background-position:0% 62%}
+  50%{background-position:100% 39%}
+  100%{background-position:0% 62%}
+}
+
+
+
+.galeria {
+  width: 100%;
+  margin: 2px;
+  padding: 2px;
+  list-style: none;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  border-radius: 2rem;
+}
+
+/*este pedazo de codigo sirve para el efecto de sombra y a cambiar colores*/
+
+.galeria li {
+  margin: 1rem;
+  box-shadow: 14px -1px 20px 9px rgb(0, 0, 0);
+  border-radius: 2rem;
+  width: auto;
+  height: 249px;
+}
+
+.galeria img {
+  width: 300px;
+  height: 250px;
+  border-radius: 2rem;
+}
+
+.galeria:hover > :not(:hover) {
+  opacity: .5;
+  transform:  scale(.9);
+  -webkit-transform:  scale(.9);
+  -moz-transform:  scale(.9);
+  -ms-transform:  scale(.9);
+  -o-transform:  scale(.9);
+}
+/*aqui se va integrar el efecto de zoom de la imagen*/
+.imagen90 {
+  transition: transform .6s;
+  -webkit-transition: transform .6s;
+  -moz-transition: transform .6s;
+  -ms-transition: transform .6s;
+  -o-transition: transform .6s;
+}
+
+
+
+
+
+/*Estilos del modal*/
+
+.modal {
+  display: none;
+}
+
+.modal:target {
+
+  display: block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.modal h3 {
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  text-align: center;
+  margin: 1.5rem 0;
+  font-weight: 800;
+
+}
+
+.imagen {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
+/*cambiar imagenes es este  "< >"*/
+.imagen a {
+  color: rgb(255, 255, 255);
+  font-size: 70px;
+  text-decoration: none;
+  margin: auto;
+}
+
+@media (max-width:400px) {
+  .imagen a {
+    margin-top: 1rem;
+  }
+}
+
+
+
+.imagen a:nth-child(2) {
+  margin: 12px;
+  height: 100%;
+  flex-shrink: 2;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+.imagen img {
+
+  width: 500px;
+  height: 100%;
+  max-width: 100%;
+  border: 10px solid #2c2929;
+  box-sizing: border-box;
+  border-radius: 3rem;
+  -webkit-border-radius: 3rem;
+  -moz-border-radius: 3rem;
+  -ms-border-radius: 3rem;
+  -o-border-radius: 3rem;
+}
+
+@media (max-width: 768px) {
+  .imagen img {
+    width: 400px;
+    height: 400px;
+    max-width: 100%;
+    margin: 50;
+
+  }
+}
+
+/* hacer subir la imagen hacia arriba o abajo*/
+@media (max-width: 400px) {
+  .imagen img {
+    width: 190px;
+    height: 250px;
+    max-width: auto;
+    max-height: auto;
+    margin-top: -4rem;
+
+
+  }
+}
+
+/*Boton para   cerrar el efecto*/
+.cerrar {
+  display: block;
+  background: rgb(255, 255, 255);
+  width: 40px;
+  height: 40px;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  font-size: 30px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 50%;
+  line-height: 25px;
+}
+
+/* este mediaquere sirve para hacer subir el boton de cerrar y el aviso*/
+@media (max-width: 400px) {
+  .cerrar {
+    margin-top: -6.7rem;
+  }
+}
+
+
+/*Aviso para que se den cuenta para cerrar el efecto de la imagen*/
+.aviso {
+  display: block;
+  background: rgb(255, 255, 255);
+  width: 50rem;
+  height: auto;
+  margin: 15px auto;
+  text-align: center;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 1rem;
+}
+
+@media (max-width: 468px) {
+  .aviso {
+    width: auto;
+    height: auto;
+    font-size: 12.6px;
+    margin-right: 2rem;
+    margin-left: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .aviso {
+    width: auto;
+    height: auto;
+    font-size: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+  }
+}
+
+/* REMOVE THIS, USE YOUR OWN  */
+
+
+.dummy_page {
+  height: 200px;
+  width: 100%;
+  background-color: #f0f0f0;
+  text-align: center;
+  box-sizing: border-box;
+  padding: 60px 0px;
+}
+

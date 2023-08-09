@@ -1,0 +1,288 @@
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+:root {
+    --color-1: #7194ad;
+    --color-2:#92b9c2;
+    --color-3:#b6cfd1;
+    --color-4:#dae9e7;
+    --color-5: #f7f9f9;
+    --color: #000000;
+  }
+ 
+  body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+.parent{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    text-align: center;
+    height: 50px;
+    top: 20px;
+   
+}
+.top {
+    color: rgb(0, 0, 0);
+}
+/*?Se iso esto para realizar
+/*?dos botones que  rediga en  la misma pagina a la seccion "construccion" 
+/*?y "Inmobiliario" para que facilite la naveegacion en la web 
+ */
+.div1{
+    grid-area: 1 / 1 / 2 / 2;
+    background-color: var(--color-1);
+    transition: 0.5s;
+}
+
+.div1:hover {
+    background-color: var(--color-2);
+    transform: scale(1.2);
+}
+
+.div2 {
+    grid-area: 1 / 2 / 2 / 2;
+    background-color: var(--color-3);
+    transition: 0.5s;
+}
+
+.div2:hover {
+    color: #f7f9f9;
+    background-color:var(--color-4);
+    transform: scale(1.2);
+}
+
+/*EMPIESA DEL PRIMER CONTENDOR*/
+
+.contenedor1 {
+    background-image: radial-gradient(var(--color-1) 0.5px, transparent 0.5px), radial-gradient(#444cf7 0.5px, var(--color-2) 0.5px);
+    background-size: 20px 20px ;
+    background-position: 0 0, 10px 10px;
+    overflow: hidden;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 19px;
+}
+
+
+.contenedor1__container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+    text-align: center;
+}
+
+.contenedor1__picture{
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    max-width: 500px;
+}
+
+.contenedor1__paragraph{
+    line-height: 1.7;
+    margin-bottom: 15px;
+}
+
+.contenedor1__img{
+    width: 100%;
+    display: block;
+    border-radius: 2rem;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+/*Botones*/
+.btn1 {
+    padding: 0.8em 1.7em;
+    background-color: transparent;
+    border-radius: .3em;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    transition: .5s;
+    font-weight: 800;
+    font-size: 20px;
+    border: 2px solid;
+    font-family: 'Tilt Neon', cursive;
+    text-transform: uppercase;
+    color: var(--color);
+    z-index: 1;
+    margin-bottom: 2rem;
+   }
+   
+   .btn1::before, .btn1::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 50px;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    border-radius: 50%;
+    z-index: -1;
+    background-color: var(--color-1);
+    transition: 1s ease;
+   }
+   
+   .btn1::before {
+    top: -1em;
+    left: -1em;
+   }
+   
+   .btn1::after {
+    left: calc(100% + 1em);
+    top: calc(100% + 1em);
+   }
+   
+   .btn1:hover::before, .btn1:hover::after {
+    height: 410px;
+    width: 410px;
+   }
+   
+   .btn1:hover {
+    color: var(--color-4);
+   }
+   
+   .btn1:active {
+    filter: brightness(.8);
+   }
+   
+   
+   /* COMIENSO DEL CONTENIDO PRINCIPAL*/ 
+    
+   *{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+    font-family: 'Tilt Neon', cursive;
+}
+
+.section__paragraph {
+    font-size: 20px;
+}
+
+.hero{
+    position: relative;
+    --wave-bottom: url('../img/images-servicios/bg-section-bottom-mobile-1.svg'); 
+}
+
+
+
+.wave{
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background-repeat: no-repeat;
+    background-size: 100% 100px;
+}
+
+.wave--bottom{
+    left: 0;
+    bottom: 0;
+    background-image: var(--wave-bottom);
+}
+
+.wave--top{
+    left: 0;
+    top: 0;
+    background-image: var(--wave-top);
+}
+
+.section{
+    background-color: var(--color-5);
+    --padding-container: 110px 0;
+}
+
+.section--white{
+
+    background-color: var(--color-3);
+    position: relative;
+    --padding-container: 210px 0;
+    --wave-top: url('../img/images-servicios/bg-section-bottom-mobile-1.svg');
+    --wave-bottom: url('../img/images-servicios/bg-section-top-mobile-2.svg'); 
+}
+
+.section__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.section__img{
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    filter: drop-shadow(4px 6px 9px black);
+    -webkit-filter: drop-shadow(4px 6px 9px black);
+}
+
+#maximo-sanitario {
+    max-width: 350px;
+}
+
+.section__texts{
+    margin-top: 50px;
+    text-align: center;
+}
+
+.subtitle{
+    margin-bottom: 16px;
+    font-family: var(--poppins);
+    font-size: 45px;
+}
+
+
+
+@media (min-width:200px){
+    .hero{
+        --wave-bottom: url('../img/images-servicios/bg-section-top-desktop-1.svg');
+    }
+
+    .cta{
+        padding: 16px 45px;
+    }
+
+
+    .section--white{
+        --wave-top: url('../img/images-servicios/bg-section-bottom-desktop-1.svg'); 
+        --wave-bottom: url('../img/images-servicios/bg-section-top-desktop-2.svg'); 
+    }
+
+    .section__container{
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .section__container--inverse{
+        flex-direction: row;
+    }
+
+    .section__picture{
+        width: 50%;
+    }
+
+    .section__texts{
+        width: 45%;
+        margin: 0;
+        text-align: start;
+    } 
+}
+
+@media (max-width: 700px) {
+    .subtitle {
+        font-size: 27px;
+        font-weight: 900;
+    }
+
+    .mino {
+        font-size: 20px;
+    }
+}

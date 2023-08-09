@@ -1,0 +1,83 @@
+:root {
+    --color-uno: #000000;
+    --color-dos: #18181a;
+    --color-tres: #42444b;
+    --color-cinco: #464852;
+    --color-seis: #ffff;
+    --color-siete:rgb(254, 134, 13);
+  }
+  
+
+/*nabar*/
+.dark .navbar {
+    background-color: var(--color-uno);
+  }
+  
+  .dark .nav-link {
+    color: #ffffff !important;
+  }
+  .dark .navbar-toggler {
+    background: #ffffff;
+  }
+  
+  .dark .navbar:hover {
+    box-shadow: 10px 2px 36px #ffffff;
+  }
+  .dark #nav-bar ul li a:hover {
+    color: var(--color-seis) !important;
+  }
+  
+.dark .contenedor1 {
+    background-image: radial-gradient(var(--color-dos) 0.5px, transparent 0.5px), radial-gradient(#4e5180 0.5px, var(--color-dos) 0.5px);
+}
+.dark .section__paragraph {
+color:var(--color-seis);
+}
+
+.dark .subtitle {
+    color: var(--color-siete);
+}
+
+.dark .section {
+    background: var(--color-dos);
+}
+
+
+.dark .section--white {
+    background-color: var(--color-tres);
+}
+
+.dark #hero-section {
+    display: none;
+    transition: 0.9s;
+    -webkit-transition: 0.9s;
+    -moz-transition: 0.9s;
+    -ms-transition: 0.9s;
+    -o-transition: 0.9s;
+}
+  
+.dark .div1 {
+    background: var(--color-tres);
+}
+.dark .div2 {
+    background: var(--color-dos);
+}
+
+.dark .footer{
+    box-shadow: 0px 30px 80px #ffffff;
+  }
+
+  .dark .btn1{
+    color: #969393;
+  }
+
+  .dark .btn1:hover {
+    color: #ffffff;
+  }
+
+  .dark .section__img {
+    filter: drop-shadow(2px 4px 6px rgb(255, 255, 255));
+  }
+.dark .contenedor1__img {
+  filter: drop-shadow(2px 4px 6px rgb(255, 255, 255));
+}

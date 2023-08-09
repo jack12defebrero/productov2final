@@ -1,0 +1,57 @@
+:root {
+  --color-uno: #000000;
+  --color-dos: #18181a;
+  --color-tres: #42444b;
+  --color-cinco: #464852;
+  --color-seis: #ffff;
+  --color-siete:rgb(254, 134, 13);
+}
+
+ .background.dark {
+ background: radial-gradient(circle, #464852 25%, transparent 26%),radial-gradient(circle at bottom left, #464852 12%, transparent 13%),radial-gradient(circle at bottom right, #464852 12%, transparent 13%),radial-gradient(circle at top left, #464852 12%, transparent 13%),radial-gradient(circle at top right, #464852 12%, transparent 13%);
+        background-size: 2em 2em;
+        background-color: #000000;
+        opacity: 1
+}
+/*nabar*/
+.dark .navbar {
+  background-color: var(--color-uno);
+}
+
+.dark .nav-link {
+  color: #ffffff !important;
+}
+.dark .navbar-toggler {
+  background: #ffffff;
+}
+
+.dark .navbar:hover {
+  box-shadow: 10px 2px 36px #ffffff;
+}
+.dark #nav-bar ul li a:hover {
+  color: var(--color-seis) !important;
+}
+
+
+.dark .miau {
+  background: var(--color-dos);
+  color: var(--color-siete);
+}
+
+.dark .contenedor {
+  border: solid 4px var(--color-cinco);
+}
+
+.dark .texto, .dark .form__title{
+  color: var(--color-seis);
+}
+
+.dark .letra {
+  color: var(--color-siete);
+  font-weight: 800;
+}
+
+.dark .footer{
+  box-shadow: 0px 30px 80px #ffffff;
+}
+

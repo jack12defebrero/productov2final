@@ -1,0 +1,72 @@
+:root {
+  --color-uno: #000000;
+  --color-dos: #18181a;
+  --color-tres: #42444b;
+  --color-cinco: #464852;
+  --color-seis: #ffff;
+  --color-siete:rgb(254, 134, 13);
+}
+
+/*nabar*/
+.dark .navbar {
+  background-color: var(--color-uno);
+}
+
+.dark .nav-link {
+  color: #ffffff !important;
+}
+.dark .navbar-toggler {
+  background: #ffffff;
+}
+
+.dark .navbar:hover {
+  box-shadow: 10px 2px 36px #ffffff;
+}
+.dark #nav-bar ul li a:hover {
+  color: var(--color-seis) !important;
+}
+
+
+.dark .galeria {
+    background: linear-gradient(277deg, #000000, #111112, #1a1a1b, #18181a);
+    background-size: 800% 800%;
+    border-radius: 0%;
+    animation: AnimationName 5s ease infinite;
+}
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+  }
+  @-moz-keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+  }
+  @-o-keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+  }
+  @keyframes AnimationName {
+    0%{background-position:0% 62%}
+    50%{background-position:100% 39%}
+    100%{background-position:0% 62%}
+  }
+
+  .dark .aviso {
+    background: var(--color-dos);
+    font-size:18px ;
+  }
+  .dark .modal {
+    color: var(--color-seis);
+    font-weight: 800;
+  }
+
+  .dark .galeria li {
+    box-shadow: 12px -1px 15px 5px rgba(65, 62, 62, 0.301);
+  }
+  .dark .footer{
+    box-shadow: 0px 30px 80px #ffffff;
+  }

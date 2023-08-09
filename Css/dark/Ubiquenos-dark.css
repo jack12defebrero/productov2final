@@ -1,0 +1,41 @@
+:root {
+    --color-uno: #000000;
+    --color-dos: #18181a;
+    --color-tres: #42444b;
+    --color-cinco: #464852;
+    --color-seis: #ffff;
+    --color-siete:rgb(254, 134, 13);
+  }
+/*nabar*/
+.dark .navbar {
+    background-color: var(--color-uno);
+  }
+  
+  .dark .nav-link {
+    color: #ffffff !important;
+  }
+  .dark .navbar-toggler {
+    background: #ffffff;
+  }
+  
+  .dark .navbar:hover {
+    box-shadow: 10px 2px 36px #ffffff;
+  }
+  .dark #nav-bar ul li a:hover {
+    color: var(--color-seis) !important;
+  }
+.dark .example2 {
+    background-color: var(--color-uno);
+}
+
+.dark .contenedor {
+    border: 5px solid var(--color-siete);
+    transition: 0.9s;
+}
+
+.dark .hija {
+    color: rgb(249, 230, 160);
+}
+.dark .footer{
+    box-shadow: 0px 30px 80px #ffffff;
+  }

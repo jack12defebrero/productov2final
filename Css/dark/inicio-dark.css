@@ -1,0 +1,85 @@
+:root {
+    --color-uno: #000000;
+    --color-dos: #18181a;
+    --color-tres: #42444b;
+    --color-cinco: #464852;
+    --color-seis: #ffff;
+    --color-siete:rgb(254, 134, 13);
+}
+.dark   {
+    background-color: var(--color-uno);
+    transition: 0.9s;
+   
+}
+
+.dark .contenedor4  {
+    background-color: var(--color-uno);
+    transition: 0.9s;
+}
+
+.dark .about__main {
+   
+    background: linear-gradient(to right top, var(--color-uno) , var(--color-tres), var(--color-cinco), var(--color-tres), var(--color-dos));
+   
+}
+ .dark .knowledge {
+    background-image: radial-gradient(var(--color-uno) 0.5px, transparent 0.5px), radial-gradient(#6B728E 0.5px, var(--color-dos) 0.5px);
+}
+.dark .parrafo  {
+    color: rgb(255, 255, 255);
+}
+.dark .about__title  {
+    color: var(--color-siete);
+}
+.dark .subtitle {
+    color: var(--color-siete);
+    font-weight: 800;
+}
+.dark .cta {
+    border: 5px solid var(--color-seis);
+    color: var(--color-seis);
+}
+
+.dark .cta::before {
+    background: var(--color-uno);
+}
+.dark .text {
+    color: #ffffff;
+}
+
+/*nabar*/
+.dark .navbar {
+    background-color: var(--color-uno);
+}
+
+.dark .nav-link {
+    color: #ffffff !important;
+}
+.dark .navbar-toggler {
+    background: #ffffff;
+}
+
+.dark .navbar:hover {
+    box-shadow: 10px 2px 36px #ffffff;
+}
+.dark .form__title {
+    color: rgb(255, 255, 255);
+}
+.dark #nav-bar ul li a:hover {
+    color: var(--color-seis) !important;
+  }
+
+  .dark .footer{
+    box-shadow: 0px 30px 80px #ffffff;
+  }
+
+  .dark .about__icons:hover {
+     /* From https://css.glass */
+background: rgba(186, 180, 180, 0.379);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(8.6px);
+-webkit-backdrop-filter: blur(8.6px);
+border: 7px solid rgba(255, 255, 255, 0.564);
+
+  }

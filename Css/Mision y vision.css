@@ -1,0 +1,79 @@
+/*Inicio de cuerpo de contenido*/
+@import url('https://fonts.googleapis.com/css2?family=Tilt+Neon&display=swap');
+:root {
+   --color-title: #020202;
+   --color-parafo: #000000;
+   --color-1: #7194ad;
+   --color-2: #92b9c2;
+   --color-3: #b6cfd1;
+   --color-4: #dae9e7;
+   --color-5: #f7f9f9;
+}
+
+.background {
+  /* background-image: linear-gradient(to left,
+         #7194ad,
+         #769bb1,
+         #7ba2b5,
+         #81a9b9,
+         #88b0bd,
+         #8eb5c0,
+         #94bac2,
+         #9bbfc5,
+         #a2c3c8,
+         #a8c7cb,
+         #afcbce,
+         #b6cfd1);
+   margin-top: -3rem;
+   margin-bottom: -8rem;
+   padding: 5rem;*/ 
+   background-image: url(../img/images/fondo\ mision\ y\ vision.png);
+   background-size: cover; 
+   background-repeat: no-repeat;
+}
+
+
+
+.miau {
+   display: block;
+   color: #ffffff;
+   background-color: #000000;
+   text-align: center;
+   font-family: 'Tilt Neon', cursive;
+   
+}
+
+.contenedor {
+ margin: 3rem;
+   background: rgba(0, 0, 0, 0.12);
+   border: 4px solid wheat;
+   border-radius: 16px;
+   -webkit-box-shadow: 27px 23px 32px 5px rgba(0, 0, 0, 0.811);
+   -moz-box-shadow: 27px 23px 32px 5px rgba(0, 0, 0, 0.813);
+   box-shadow: 27px 23px 32px 5px rgba(0, 0, 0, 0.811);
+  
+background: rgba(255, 255, 255, 0.395);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(3.6px);
+-webkit-backdrop-filter: blur(9.6px);  
+}
+
+.letra {
+   text-align: center;
+   color: var(--color-title);
+   font-family: 'Tilt Neon', cursive;
+}
+
+.texto {
+   text-align: justify;
+   padding: 2rem;
+   font-size: 21px;
+   font-family: 'Tilt Neon', cursive;
+}
+
+@media (max-width: 400px) {
+   .contenedor {
+      margin: 0.5rem;
+   }
+}

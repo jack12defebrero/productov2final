@@ -1,0 +1,171 @@
+/* The switch - the box around the slider */
+.switch {
+    --width-of-switch: 3.5em;
+    --height-of-switch: 2em;
+    /*sizeofslidingicon--sunandmoon*/--size-of-icon: 1.4em;
+    /*itislikeainline-paddingofswitch*/--slider-offset: 0.3em;
+    position: relative;
+    width: var(--width-of-switch);
+    height: var(--height-of-switch);
+    animation: switch  2s ease-in-out infinite;
+    -webkit-animation: switch  2s ease-in-out infinite;
+}
+  
+  @keyframes switch {
+    0% {
+      transform: translateY(0); /* El botón comienza en su posición original */
+    }
+    50% {
+      transform: translateY(-9px);
+      /*Elbotónsemuevehaciaarriba*/
+      -webkit-transform: translateY(-20px);
+      -moz-transform: translateY(-9px);
+      -ms-transform: translateY(-9px);
+      -o-transform: translateY(-9px);
+      -webkit-transform: translateY(-9px);
+}
+    100% {
+      transform: translateY(0); /*Elbotónvuelveasuposiciónoriginal*/
+}
+  }
+  /* Hide default HTML checkbox */
+  .switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  /* The slider */
+  .switch .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #f4f4f5;
+    transition: .4s;
+    border-radius: 30px;
+  }
+  
+  .switch .slider:before {
+    position: absolute;
+    content: "";
+    height: var(--size-of-icon,1.4em);
+    width: var(--size-of-icon,1.4em);
+    border-radius: 20px;
+    left: var(--slider-offset,0.3em);
+    top: 50%;
+    transform: translateY(-50%);
+    background: linear-gradient(40deg,#ff0080,#ff8c00 70%);
+    transition: .4s;
+  }
+  
+  .switch input:checked + .slider {
+    background-color: #303136;
+  }
+  
+  .switch input:checked + .slider:before {
+    left: calc(100% - (var(--size-of-icon,1.4em) + var(--slider-offset,0.3em)));
+    background: #303136;
+    /* change the value of second inset in box-shadow to change the angle and direction of the moon  */
+    box-shadow: inset -3px -2px 5px -2px #8983f7, inset -10px -4px 0 0 #a3dafb;
+  }
+  
+  /* The slider icon */
+  .switch .slider-icon {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1.2em;
+    color: #fff;
+    transition: .4s;
+  }
+  
+  /* The moon icon */
+  .switch input:checked + .slider .slider-icon .bx-moon {
+    opacity: 0;
+  }
+  
+  /* The sun icon */
+  .switch input:checked + .slider .slider-icon .bx-sun {
+    opacity: 1;
+    position: relative;
+    left: -1.4em;
+  }
+  
+
+/* segundo boton switch*/
+/* The switch - the box around the slider */
+#theme-toggle-button {
+  font-size: 17px;
+  position: relative;
+  display: inline-block;
+  width: 7em;
+  cursor: pointer;
+}
+
+/* Hide default HTML checkbox */
+#toggle {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+#container,
+#patches,
+#stars,
+#button,
+#sun,
+#moon,
+#cloud {
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 0.25s;
+}
+
+/* night sky background */
+#toggle:checked + svg #container {
+  fill: #2b4360;
+}
+
+/* move button to right when checked */
+#toggle:checked + svg #button {
+  transform: translate(28px, 2.333px);
+}
+
+/* show/hide sun and moon based on checkbox state */
+#sun {
+  opacity: 1;
+}
+
+#toggle:checked + svg #sun {
+  opacity: 0;
+}
+
+#moon {
+  opacity: 0;
+}
+
+#toggle:checked + svg #moon {
+  opacity: 1;
+}
+
+/* show or hide background items on checkbox state */
+#cloud {
+  opacity: 1;
+}
+
+#toggle:checked + svg #cloud {
+  opacity: 0;
+}
+
+#stars {
+  opacity: 0;
+}
+
+#toggle:checked + svg #stars {
+  opacity: 1;
+}
+
+  

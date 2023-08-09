@@ -1,0 +1,6 @@
+git add .
+
+git commit -m "eliminacion d eun archivo"  === se escribe aqui un comentario.
+
+git push origin main == subir al repositorio. 
+xdddd
